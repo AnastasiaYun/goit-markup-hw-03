@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --background: #2f303a;
+  --button-bgr: #f5f4fa;
 }
 
 body {
@@ -44,10 +45,15 @@ body {
   line-height: 1.142;
   letter-spacing: 0.02em;
 }
+.site-nav {
+  margin: 0;
+  padding: 0;
+}
 .site-nav a {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
+  margin: 0;
 }
 
 .site-nav li {
@@ -77,19 +83,22 @@ body {
 .hero {
   background: var(--background);
   text-align: center;
-  padding: 200px;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-title {
+  margin: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  padding-bottom: 30px;
 }
 /* Button */
 .button {
+  min-width: 200px;
   color: var(--white-color);
   background: var(--accent-color);
   border-radius: 4px;
@@ -99,16 +108,32 @@ body {
   line-height: 1.875;
   text-decoration: none;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button-portfolio {
+  display: inline-block;
   list-style: none;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
 }
 .button-portfolio-item {
-  width: 70px;
+  background: var(--button-bgr);
+  border-radius: 4px;
+  color: var(--primary-text-color);
+  padding: 6px 22px;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+}
+.button-portfolio-item:hover,
+.button-portfolio-item:focus {
+  min-width: 70px;
   border-radius: 4px;
   color: var(--white-color);
   background-color: var(--accent-color);
   text-align: center;
+  border: none;
 }
 
 /* Особенности */
@@ -117,6 +142,8 @@ section {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  margin-top: 95px;
+  margin-bottom: 95px;
 }
 .section-title-features {
   color: var(--primary-text-color);
@@ -124,9 +151,19 @@ section {
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.selection-text {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .section li {
   list-style: none;
+}
+.list {
+  padding: 0;
+  margin: 0;
 }
 /* Чем мы занимаемся */
 .section-title {
@@ -136,6 +173,8 @@ section {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 /* наша команда */
 .section-title-names,
