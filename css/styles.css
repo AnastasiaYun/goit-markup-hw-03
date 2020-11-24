@@ -83,6 +83,7 @@ body {
 .hero {
   background: var(--background);
   text-align: center;
+  margin: 0;
   padding-bottom: 200px;
   padding-top: 200px;
 }
@@ -192,6 +193,8 @@ section {
 /* подвал */
 .footer {
   background: var(--background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--white-color);
@@ -201,11 +204,13 @@ section {
   line-height: 1.714;
   letter-spacing: 0.03em;
   list-style: none;
+  padding-top: 20px;
 }
 .footer-address,
 .footer-address-mail-tel a {
   text-decoration: none;
   color: var(--white-color);
+  padding-bottom: 10px;
 }
 .footer-address-mail-tel a {
   color: var(--white-color);
