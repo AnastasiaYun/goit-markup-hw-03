@@ -156,7 +156,13 @@ body {
   text-align: center;
   border: none;
 }
-
+.button-portfolio {
+  display: flex;
+  justify-content: center;
+}
+.button-portfolio .item + .item {
+  margin-left: 8px;
+}
 /* Особенности */
 section {
   color: var(--title-text-color);
@@ -267,6 +273,9 @@ section {
 }
 /* Портфолио */
 .portfolio-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
 }
 .portfolio-works-title {
