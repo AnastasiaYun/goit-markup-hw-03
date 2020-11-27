@@ -34,6 +34,8 @@ body {
 }
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,8 +46,8 @@ body {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 .main-nav {
   display: flex;
@@ -94,6 +96,9 @@ body {
 }
 .header-mail-tel {
   margin-left: auto;
+}
+.hr {
+  border: 1px solid #ececec;
 }
 
 /* Герой */
@@ -155,6 +160,8 @@ body {
   background-color: var(--accent-color);
   text-align: center;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .button-portfolio {
   display: flex;
@@ -286,6 +293,7 @@ section {
   letter-spacing: 0.06em;
   padding-top: 20px;
   margin: 0;
+  padding-left: 24px;
 }
 .portfolio-works-text {
   color: var(--title-text-color);
@@ -294,5 +302,13 @@ section {
   letter-spacing: 0.03em;
   margin: 0;
   padding-top: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+.outline {
+  border: 1px solid #ececec;
+  margin-bottom: 30px;
+}
+.no-margin-bottom {
+  margin-bottom: 65px;
 }
