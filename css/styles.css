@@ -55,6 +55,7 @@ p {
   letter-spacing: 0.02em;
   padding-top: 7px;
   padding-bottom: 7px;
+  border-bottom: 1px solid #ececec;
 }
 .main-nav {
   display: flex;
@@ -103,9 +104,6 @@ p {
 }
 .header-mail-tel {
   margin-left: auto;
-}
-.border {
-  border: 1px solid #ececec;
 }
 
 /* Герой */
@@ -183,8 +181,8 @@ section {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  margin-top: 95px;
-  margin-bottom: 95px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 /* .section-title {
   padding-top: 95px;
@@ -332,5 +330,5 @@ section {
   margin-bottom: 30px;
 }
 .no-margin-bottom {
-  margin-bottom: 65px;
+  padding-bottom: 65px;
 }
