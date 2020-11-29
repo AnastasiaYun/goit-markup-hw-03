@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --background: #2f303a;
   --button-bgr: #f5f4fa;
+  --bacground-secondary: #f5f4fa;
 }
 
 body {
@@ -18,7 +19,13 @@ body {
 /* белый #FFFFFF */
 /* акцент #2196F3 */
 /* вторичный цвет фона #E5E5E5 */
-
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
 .logo,
 .logo-footer {
   color: var(--primary-text-color);
@@ -88,7 +95,7 @@ body {
   text-decoration: none;
 }
 .header-mail-tel .item + .item {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 .header-mail-tel :hover,
 .header-mail-tel :focus {
@@ -97,7 +104,7 @@ body {
 .header-mail-tel {
   margin-left: auto;
 }
-.hr {
+.border {
   border: 1px solid #ececec;
 }
 
@@ -179,6 +186,9 @@ section {
   margin-top: 95px;
   margin-bottom: 95px;
 }
+/* .section-title {
+  padding-top: 95px;
+} */
 .section-features {
   display: flex;
   justify-content: space-between;
@@ -190,13 +200,13 @@ section {
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   margin-top: 0;
 }
 .selection-text {
   width: 270px;
-  margin-top: 0;
-  margin-bottom: 10px;
+  padding-top: 0;
+  /* padding-bottom: 10px; */
 }
 .section li {
   list-style: none;
@@ -214,7 +224,7 @@ section {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-top: 0;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .img-works {
   display: flex;
@@ -224,9 +234,15 @@ section {
   text-align: center;
 }
 /* наша команда */
+.team {
+  background-color: var(--bacground-secondary);
+  margin-bottom: 0;
+  padding-top: 95px;
+}
 .section-names {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 95px;
 }
 .section-title-names,
 .section-title-position {
@@ -235,7 +251,8 @@ section {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
-  margin: 0;
+}
+.section-title-names {
   padding-top: 30px;
 }
 .section-title-position {
@@ -243,6 +260,12 @@ section {
   font-weight: normal;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+.sectin-names-shadow {
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /* подвал */
 .footer {
@@ -285,15 +308,16 @@ section {
   justify-content: space-between;
   list-style: none;
 }
+.portfolio-title-text {
+  padding: 20px 24px;
+}
 .portfolio-works-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
   margin: 0;
-  padding-left: 24px;
 }
 .portfolio-works-text {
   color: var(--title-text-color);
@@ -301,9 +325,7 @@ section {
   line-height: 1.875;
   letter-spacing: 0.03em;
   margin: 0;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding-top: 4px;
 }
 .outline {
   border: 1px solid #ececec;
